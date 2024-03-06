@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- render vue component -->
     <router-view></router-view>
   </div>
 </template>

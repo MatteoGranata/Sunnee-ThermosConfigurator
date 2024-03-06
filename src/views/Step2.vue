@@ -6,6 +6,7 @@ export default {
     };
   },
   methods: {
+    // function to send data to Config
     selectColor(color) {
       this.$emit('color-selected', color);
     }
@@ -23,5 +24,3 @@ export default {
     </div>
   </div>
 </template>
-
-

@@ -6,6 +6,7 @@ export default {
     };
   },
   methods: {
+    // function to send data to Config
     selectColor(color) {
       this.$emit('color-selected', color);
     }
@@ -23,7 +24,6 @@ export default {
     </div>
   </div>
 </template>
-
 
 <style>
 .color-option {
@@ -62,8 +62,9 @@ export default {
 @media (max-width: 980px) {
 
   .text {
-  font-size: 6vw;
-}
+    font-size: 6vw;
+  }
+
   .color-option {
     width: 5vh;
     height: 5vh;
@@ -85,7 +86,7 @@ export default {
     left: -5vw;
     align-items: center;
     justify-content: space-evenly;
-    grid: repeat(2, 10vh) / auto-flow  17vw;
+    grid: repeat(2, 10vh) / auto-flow 17vw;
   }
 }
 </style>

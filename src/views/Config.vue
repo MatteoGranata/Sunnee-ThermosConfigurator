@@ -1,11 +1,14 @@
 <template>
   <div class="config-container">
+    <!-- router view to render the steps and receive the data -->
     <router-view :key="$route.fullPath" @color-selected="handleColorSelected"></router-view>
+    <!-- buttons to go to the next step or go back -->
     <div class="btn-container">
       <button class="btn-prev" v-if="step > 1" @click="prevStep">BACK</button>
-      <button class="btn-next" v-if="step < 3" @click="nextStep">FORWARD</button>
+      <button class="btn-next" v-if="step < 3" @click="nextStep">NEXT</button>
       <button class="btn-submit" v-if="step === 3" @click="submit">SEND</button>
     </div>
+    <!-- images of the individual parts of the thermos that are colored based on the user's choices -->
     <div class="preview-container">
       <div class="preview">
         <img class="thermos-background" src="../assets/img/background-without-thermos.png">
@@ -23,25 +26,30 @@ export default {
   data() {
     return {
       step: 1,
+      // default part colors
       capColor: `${'none'}`,
       bodyColor: `${'none'}`,
       bottomColor: `${'none'}`,
     };
   },
   methods: {
+    // function to go to the next step
     nextStep() {
       this.step++;
       this.$router.push({ name: `step${this.step}` });
     },
+    // function to go to the prev step
     prevStep() {
       this.step--;
       this.$router.push({ name: `step${this.step}` });
     },
+    // function to receive colors from steps
     handleColorSelected(color) {
       if (this.step === 1) this.capColor = color;
       else if (this.step === 2) this.bodyColor = color;
       else if (this.step === 3) this.bottomColor = color;
     },
+    // function to send the data and pass to the Thanks.vue component
     submit() {
       const colorsData = {
         capColor: this.capColor,
@@ -141,7 +149,6 @@ export default {
   border-radius: 10px;
 }
 
-
 @media (max-width: 980px) {
   .config-container {
     flex-direction: column-reverse;
@@ -164,7 +171,5 @@ export default {
     margin: 0 5vw;
     width: 90vw;
   }
-
-
 }
 </style>

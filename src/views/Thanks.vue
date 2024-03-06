@@ -1,6 +1,5 @@
 <template>
   <div class="overflow">
-
     <div class="container">
       <div class="thanks-title">
         <h1>
@@ -20,6 +19,7 @@
           </p>
         </div>
       </div>
+      <!-- summary that tells the user all the colors chosen -->
       <div class="summary">
         <h2>Summary of choices:</h2>
         <div class="cap">
@@ -61,6 +61,7 @@
 
 <script>
 export default {
+  // function that refers to the first step in case of failure to send data
   mounted() {
     if (!this.$route.query.capColor || !this.$route.query.bodyColor || !this.$route.query.bottomColor) {
       this.$router.push('/');
