@@ -44,12 +44,11 @@ The project is divided into 7 different Vue.js components, each with specific re
 
 ```sh
 git clone https://github.com/MatteoGranata/Sunnee-ThermosConfigurator.git
-```
-```sh
+
 cd Sunnee-ThermosConfigurator
-```
-```sh
-npm install 
+
+npm install
+
 ```
 ```sh
 npm run dev
