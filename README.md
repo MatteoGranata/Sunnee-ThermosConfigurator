@@ -40,14 +40,18 @@ The project is divided into 7 different Vue.js components, each with specific re
 
 ### Instructions for download
 
+`git bash` and `Node.js` are required for correct installation.
 
 ```sh
-$ git clone https://github.com/MatteoGranata/Sunnee-ThermosConfigurator.git
-
+git clone https://github.com/MatteoGranata/Sunnee-ThermosConfigurator.git
+```
+```sh
 cd Sunnee-ThermosConfigurator
-
+```
+```sh
 npm install 
-
+```
+```sh
 npm run dev
 ```
 and press on the generated link for the local preview with ctrl
