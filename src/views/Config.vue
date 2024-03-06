@@ -129,12 +129,12 @@ export default {
 
 .btn-container {
   position: absolute;
-  top: 42rem;
-  left: 4rem;
+  top: 77vh;
+  left: 6vw;
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  width: 40vw;
+  width: 35vw;
   height: fit-content;
 }
 
