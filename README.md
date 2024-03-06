@@ -49,11 +49,10 @@ cd Sunnee-ThermosConfigurator
 
 npm install
 
-```
-```sh
 npm run dev
+
 ```
-and press on the generated link for the local preview with `ctrl+rightclick`
+And press `ctrl+rightclick` on the link generated for the local preview.
 
 ## Made with: 
 
