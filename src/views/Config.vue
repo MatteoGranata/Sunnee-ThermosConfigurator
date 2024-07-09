@@ -141,12 +141,14 @@ export default {
 .btn-next,
 .btn-prev,
 .btn-submit {
-  padding: 1rem;
-  width: fit-content;
-  height: fit-content;
-  background: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(88, 130, 79);
   border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(88, 130, 79);
+  text-decoration: none;
+  font-weight: 900;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 980px) {
