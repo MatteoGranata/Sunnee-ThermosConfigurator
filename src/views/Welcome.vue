@@ -110,8 +110,13 @@ body {
 }
 
 .link {
+  border: 1px solid rgb(88, 130, 79);
+  border-radius: 10px;
+  background-color:rgb(245, 245, 245);
   color: rgb(88, 130, 79);
-  text-decoration: none;
+  text-decoration:none;
+  font-weight: 500;
+  padding:.1rem .5rem .1rem .5rem;
   text-transform: uppercase;
 }
 
