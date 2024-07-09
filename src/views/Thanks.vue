@@ -3,7 +3,7 @@
     <div class="container">
       <div class="thanks-title">
         <h1>
-          THANKS YOU SO MUCH
+          THANKS YOU SO MUCH !!
         </h1>
       </div>
       <div class="thanks-container">
@@ -92,7 +92,7 @@ export default {
   display: flex;
   width: 67vw;
   align-items: start;
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 
 .summary {
@@ -121,6 +121,7 @@ export default {
   text-transform: uppercase;
   text-align: center;
   margin-left: 1rem;
+  padding: .5rem;
 }
 
 @media (max-width: 980px) {
